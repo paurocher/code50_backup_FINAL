@@ -1,0 +1,80 @@
+Definitions
+
+variable: A variable is a name for some value that can change.
+Parts of variable declaration: type, name, assignment operator, value: 'int calls = 3;'
+How to read in plain english: "Create a variable named calls that gets the value 3."
+The type defines how to interpret that variable, what amount of memory to allocate it, ...
+
+"Syntactic sugar" is the shortening of the operators: calls = calls * 5 --> calls *= 5.
+
+"Function call" is when you call, invoke a function.
+
+printf: string formatting. Has formating codes (%s, %i, %f, %char, ...) used as placeholders that will be filled by the following arguments or parameters in the printf function. Types have to match!
+
+"function prototype": function declaration above main so main does not complaint if that function is declared below main. This helps us having the main function on top and make the code more readable, but is is solely a convention.
+
+Some types can take a qualiflier that modifies the datatype slightly: unsigned int modifies the type int to a type that allows for representation of only positive larger number for example.
+
+int phone; //declaration
+phone = 4 // assignement
+int phone = 5 // initialization
+
+Conditional statements:
+    if (expr)
+    {
+
+    }
+    else if (expr)
+    {
+
+    }
+
+    --
+
+    if (expr)
+    {
+
+    }
+    if (expr)
+    {
+
+    }
+    else (expr)
+    {
+
+    }
+
+
+    switch conditional statement:
+    int a = GetInt(""Gimme an int: ")
+    switch (a)
+    {
+        case 3:
+            print("Three");
+        case 2:
+            print("Two");
+        case 1:
+            print("One");
+        default:
+            print("GO!);
+    }
+
+    Quationmark column or Turnary operator: another conditional statement (like the one in tcl):
+    int 3 > (expr) ? 1 : 0;
+
+loops:
+while
+do
+for (start; expr; increment)
+
+Terminal commands:
+    ls
+    cd
+    pwd (present working directory)
+    Ctl + l
+    mkdir
+    cp soruce dest (-r for recursive)
+    rm source (-r for recursive, -f to force, -rf for both)
+    mv
+    
+

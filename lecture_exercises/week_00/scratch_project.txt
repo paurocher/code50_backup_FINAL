@@ -1,0 +1,7 @@
+Game where a zone starts with some bacteria that grows little y little.
+You have a bucket to fill of bacteria and put it into milk to make cheese.
+
+When the cheese is cooked (has enough bacteria) the game stops, a farmer takes a wheel of cheese out of the screen.
+
+Levels are always the same but bacteria growth is faster.
+Maybe think about making different types of cheese. Each one can give you extra points or powers to decrease bacteria.

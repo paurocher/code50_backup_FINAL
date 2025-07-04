@@ -1,0 +1,3 @@
+ The SpotifyWrapped campaign includes the five musicians a user has listened to most often, the songs which they have listened to most, and their favourite music genres.
+
+With a sql query we can get the activity of a user. With the activity results we can build lists of habits based on which songs the user listened the most during a year. These songs have all metadata embeded as we saw in the schema of the exercise: id, name, artist_id, danceabilty, energy, key, loudness, speechiness, valence, tempo, duration_ms.

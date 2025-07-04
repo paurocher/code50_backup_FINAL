@@ -1,0 +1,39 @@
+*{
+    marging: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('/imgs/montagnedargent_05.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+main{
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    background-color: #FFFFFF50;
+}
+.card-img-top{
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+.title{
+    color: white;
+    font-weight: bold;
+}
+button{
+    background-color: #d9edff;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    vertical-align: middle;
+}

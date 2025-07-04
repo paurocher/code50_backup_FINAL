@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <div class="section">
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Symbol</th>
+                    <th>Shares</th>
+                    <th>Price</th>
+                    <th>TOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for share in shares %}
+                    <tr>
+                        <td>{{ share.symbol }}</td>
+                        <td>{{ share.amount }}</td>
+                        <td>{{ share.share_price | usd}}</td>
+                        <td>{{ share.total_price | usd}}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Cash</td>
+                    <td>{{ cash }}</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><b>TOTAL</td>
+                        <td>{{ total }}</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+{% endblock %}

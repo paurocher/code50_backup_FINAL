@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+
+            function changeButtonColor(event)
+            {
+                resetButtonColor()
+                var triggerObject=event.srcElement;
+                if (triggerObject.innerHTML != 'Rice')
+                    {
+                    triggerObject.style.backgroundColor='red';
+                    veredict(false);
+                    }
+                else
+                    {
+                        triggerObject.style.backgroundColor='green';
+                        veredict(true);
+                    }
+            }
+
+            function resetButtonColor()
+            {
+                buttons = ['button1', 'button2', 'button3', 'button4']
+                for (var button of buttons)
+                {
+                    document.getElementById(button).style.backgroundColor='';
+                }
+            }
+
+            function veredict(right)
+                {
+                    if (right)
+                        {
+                            document.getElementsByName('veredict')[0].innerHTML = 'Correct';
+                        }
+                    else
+                        {
+                            document.getElementsByName('veredict')[0].innerHTML = 'Incorrect';
+                        }
+                }
+
+            function checkAnswer()
+                {
+                    var text_field = document.getElementsByName('answer')[0];
+                    var answer = text_field.value.toLowerCase();
+                    if (answer == "canada")
+                        {
+                            color = 'green';
+                        }
+                    else
+                        {
+                            color = 'red';
+                        }
+                    text_field.style.backgroundColor = color;
+                }
+
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>What is the basic ingredient of "paella"?</h3>
+
+                <p name="veredict"></p>
+
+                <button id="button1" onclick=changeButtonColor(event);>Cauliflower</button>
+                <button id="button2" onclick=changeButtonColor(event);>Eggplant</button>
+                <button id="button3" onclick=changeButtonColor(event);>Rice</button>
+                <button id="button4" onclick=changeButtonColor(event);>Melon</button>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>What country is the city of Montreal in?</h3>
+                <input name="answer" type="text" />
+                <input type="submit" onclick=checkAnswer(); />
+            </div>
+        </div>
+    </body>
+</html>

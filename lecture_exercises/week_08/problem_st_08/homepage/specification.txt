@@ -1,0 +1,29 @@
+10 HTML tags used in the stylesheet:
+  - *
+  - body
+  - main
+  - .card-img-top
+  - .title
+  - button
+
+5 CSS properties used:
+  - marging
+  - padding
+  - background-image
+  - padding
+  - width
+  - color
+  - many more ...
+
+
+How I used Javascript:
+I made a little script that opens a new window up with google maps showing the location of Montreal, in Qubec, Canada.
+
+How I used Bootstrap:
+It was a first for me. I used it to create:
+  - the header of the page
+  - the auto-hide menu
+  - the cards containing images
+
+
+Thank you :)
